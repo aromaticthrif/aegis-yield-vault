@@ -1,0 +1,29 @@
+{
+  "name": "aegis-yield-vault",
+  "version": "1.0.0",
+  "description": "ERC-4626 Compliant Decentralized Yield Staking and Asset Management Vault",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy": "hardhat run scripts/deploy.js"
+  },
+  "keywords": [
+    "ethereum",
+    "solidity",
+    "web3",
+    "erc4626",
+    "defi",
+    "vault",
+    "staking"
+  ],
+  "author": "aromaticthrif",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "hardhat": "^2.19.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.9.3"
+  }
+}
