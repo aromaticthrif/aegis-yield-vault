@@ -67,8 +67,8 @@ A production-grade, secure, and gas-optimized implementation of the **ERC-4626 T
 ### 1. Installation
 
 ```bash
-git clone https://github.com/aromaticthrif/repo-7nwqrop9.git
-cd repo-7nwqrop9
+git clone https://github.com/aromaticthrif/aegis-yield-vault.git
+cd aegis-yield-vault
 npm install
 ```
 
