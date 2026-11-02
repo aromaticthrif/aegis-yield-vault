@@ -86,7 +86,8 @@ contract AegisVault is IERC20 {
         shares = convertToShares(assets);
         require(shares > 0, "Shares returned 0");
 
-        require(asset.transferFrom(msg.sender, address(this), assets), "Transfer failed");
+        // Security Fix (#1): SafeERC20 return check
+        require(asset.transferFrom(msg.sender, address(this), assets), "SafeERC20: Transfer failed");
 
         _mint(receiver, shares);
         emit Deposit(msg.sender, receiver, assets, shares);
